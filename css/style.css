@@ -93,6 +93,9 @@ header .container{
     flex-direction: column;
     justify-content: center;
 }
+.section-about__cards{
+    
+}
 .about-card__wrap{
     max-width: 200px;
     max-height: 210px;
