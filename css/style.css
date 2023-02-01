@@ -82,10 +82,17 @@ header .container{
     justify-content: space-around;
 }
 .img-avatar{
-    width: 428px;
-    height: 465px;
-    background-color: aqua;
+    max-width: 428px;
+    max-height: 465px;
+
     margin-top: 28px;
+}
+.img-avatar img{
+    max-width: 428px;
+    max-height: 465px;
+}
+.img-avatar img:hover{
+    transform: scale(1.09);
 }
 .section-about__info{
     text-align: left;
@@ -94,7 +101,10 @@ header .container{
     justify-content: center;
 }
 .section-about__cards{
-    
+    padding-top: 44px;
+    padding-bottom: 64px;
+    max-width: 630px;
+    max-height: 210px;
 }
 .about-card__wrap{
     max-width: 200px;
