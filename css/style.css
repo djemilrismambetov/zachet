@@ -11,6 +11,13 @@ header .container{
 }
 .header-logo{
     padding-top: 17px;
+    transition: 0.4s;
+}
+.header-logo:hover{
+    opacity: 0.8;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    transform: scale(1.2);
 }
 .navbar{
     display: flex;
@@ -28,7 +35,7 @@ header .container{
     font-size: 16px;
     line-height: 19px;
 
-
+    transition: 0.4s;
 
 }
 .nav__link:hover{
@@ -40,6 +47,9 @@ header .container{
     font-size: 20px;
 }
 .nav__button{
+    padding-left: 70px;
+}
+.nav__button button{
     width: 180px;
     height: 50px;
     background-color: #FF4D4D;
@@ -52,10 +62,57 @@ header .container{
     text-align: center;
 
     color: #FFFFFF;
+    transition: 0.8s;
+    /* transform: scale(1.0); */
+}
+.nav__button button:hover{
+    width: 220px;
+    height: 70px;
+    font-size:20px;
+    text-transform: capitalize;
+    transition-duration: 0.8s;
+    
+
 }
 .section-about{
     background-color: #C3FFC2;
     height: 493px; 
     /* ПОПРАВИТЬ ВЫСОТУ */
-    
+    display: flex;
+    justify-content: space-around;
+}
+.img-avatar{
+    width: 428px;
+    height: 465px;
+    background-color: aqua;
+    margin-top: 28px;
+}
+.section-about__info{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-card__wrap{
+    max-width: 200px;
+    max-height: 210px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-card__arrow{
+    display: flex;
+    flex-direction: row;
+    padding-left: 164px;
+    padding-right: 20px;
+    padding-top: 25px;
+}
+.about-card__icon{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-top: 68px;
+    padding-left: ;
 }
