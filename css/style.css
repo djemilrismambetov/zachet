@@ -104,6 +104,7 @@ header .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 900px;
 }
 .section-about__info h2{
     font-weight: 700;
@@ -178,8 +179,8 @@ header .container{
     gap: 30px;
 }
 .section-tarifs__card{
-    height: 350px;
-    width: 320px;
+    max-height: 350px;
+    max-width: 320px;
     padding-left: 30px;
     border-radius: 10px;
     transition-duration: 0.2s;
@@ -226,8 +227,12 @@ header .container{
 }
 .section-tarifs__title h5{
     /* padding-top: 57px; */
+    padding-right: 122px;
     font-size: 12px;
     font-weight: 500;
+}
+.about-card__button{
+    padding-bottom: 20px;
 }
 .about-card__button button{
     /* display: inline-block; */
@@ -240,13 +245,16 @@ header .container{
     font-weight: 600;
     line-height: 40px;
     font-size: 16px;
-    padding: 0px 20px 2px 20px;
+    padding: 0px 20px 20px 20px;
     margin-top: 15px;
     margin-left: 0px;
+   
     border-radius: 4px;
     border: none;
     color: #FFFFFF;
     transition: all 0.1s;
+    max-height: 40px;
+    max-width: 150px;
 }
 .about-card__button button:hover{
     text-decoration: underline 2px white;
@@ -273,6 +281,10 @@ header .container{
     background-position-x: 200px;
     background-position-y: 190px;
 }
+.add_more{
+    display: flex;
+    align-items: center;
+}
 .section-promotion{
     padding-top: 70px;
     max-height: 525px;
@@ -294,4 +306,5 @@ header .container{
 }
 .max-size{
     width: 1200px;
+    height: 1000px;
 }
