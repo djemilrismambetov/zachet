@@ -57,10 +57,42 @@
         </div>
     </header>
     <main>
-
+        <body style="background-color: white;">
+            <div class="container">
+              <h1>Our Tariffs</h1>
+              <div class="tariff-card">
+                <img src="tariff1.jpg" alt="Tariff 1">
+                <h2>Tariff 1</h2>
+                <p class="price">899 ₽</p>
+                <p>Some description for tariff 1</p>
+              </div>
+              <div class="tariff-card">
+                <img src="tariff2.jpg" alt="Tariff 2">
+                <h2>Tariff 2</h2>
+                <p class="price">999 ₽</p>
+                <p>Some description for tariff 2</p>
+              </div>
+              <div class="tariff-card">
+                <img src="tariff3.jpg" alt="Tariff 3">
+                <h2>Tariff 3</h2>
+                <p class="price">1099 ₽</p>
+                <p>Some description for tariff 3</p>
+              </div>
+              <div class="tariff-card">
+                <img src="tariff4.jpg" alt="Tariff 4">
+                <h2>Tariff 4</h2>
+                <p class="price">1999 ₽</p>
+                <p>Some description for tariff 4</p>
+              </div>
+              <h2>Customize your tariff</h2>
+              <input type="range" min="899" max="1999" value="899" class="slider" id="tariffRange">
+              <p>Current tariff price: <span id="tariffPrice">899</span> ₽</p>
+            </div>
     </main>
     <footer>
 
     </footer>
+    <script src="../js/slider.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
