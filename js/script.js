@@ -10,5 +10,5 @@ PromotionImage.onclick = function() {
     PromoteFlex.classList.add("flex_center")
 }
 TransferToTariffs.onclick = function(){
-    window.location.href = "./html/tarrifs.html"
+    window.location.href = "https://djemilrismambetov.github.io/zachet/html/tarrifs.html"
 }
