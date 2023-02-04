@@ -75,24 +75,26 @@ header .container{
 
 }
 .section-about{
-    background-color: #C3FFC2;
-    height: 493px; 
+    
+    max-height: 493px; 
     /* ПОПРАВИТЬ ВЫСОТУ */
     display: flex;
     justify-content: space-around;
+    border-radius: 20px;
 }
+
 .img-avatar{
     max-width: 428px;
     max-height: 465px;
-
     margin-top: 28px;
+    cursor: pointer;
 }
 .img-avatar img{
     max-width: 428px;
     max-height: 465px;
 }
 .img-avatar img:hover{
-    transform: scale(1.09);
+    transform: scale(1.01);
 }
 .section-about__info{
     text-align: left;
@@ -100,32 +102,117 @@ header .container{
     flex-direction: column;
     justify-content: center;
 }
+.section-about__info h2{
+    font-weight: 700;
+}
+.section-about__info h5{
+    font-weight: 500;
+}
 .section-about__cards{
     padding-top: 44px;
     padding-bottom: 64px;
     max-width: 630px;
     max-height: 210px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    
 }
 .about-card__wrap{
-    max-width: 200px;
-    max-height: 210px;
+    width: 200px;
+    height: 210px;
     background: #FFFFFF;
     border-radius: 5px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
+    justify-content: space-between; */
+    transition-duration: 0.8s;
+    gap: 10px;
+}
+.about-card__wrap:hover{
+    transform: scale(1.118);
+    transition-duration: 0.8s;
+    /* cursor: auto; */
+}
+.about-card__head{
+    display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .about-card__arrow{
-    display: flex;
-    flex-direction: row;
-    padding-left: 164px;
-    padding-right: 20px;
-    padding-top: 25px;
+   cursor: pointer;
 }
 .about-card__icon{
-    display: flex;
+    /* display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    padding-top: 68px;
-    padding-left: ;
+    margin-top: -15px;
+    padding-left: 20px; */
+}
+.about-card__title{
+    padding-left: 20px;
+    padding-top: 17px;
+    font-weight: 700;
+}
+.about-card__text{
+    padding-left: 20px;
+}
+.section-tarifs{
+    padding-top: 80px;
+}
+.section-tarifs h2{
+    text-align: center;
+    font-weight: 700;
+}
+.section-tarifs__cards-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+.section-tarifs__card{
+    height: 350px;
+    width: 320px;
+    padding-left: 30px;
+    border-radius: 10px;
+    transition-duration: 0.8s;
+}
+.section-tarifs__card:hover{
+    transform: scale(1.118);
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+.section-tarifs__name h4{
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 25px;
+}
+.green{
+    background-color: #C3FFC2;
+}
+.section-tarifs__speed-name h5{
+    padding-top: 57px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.section-tarifs__speed-value h3{
+    font-size:30px;
+    font-weight:700;
+}
+.speed-value{
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-transform:uppercase
+}
+.red{
+    color: #FF4D4D;
+}
+.section-tarifs__title h5{
+    /* padding-top: 57px; */
+    font-size: 12px;
+    font-weight: 500;
 }
