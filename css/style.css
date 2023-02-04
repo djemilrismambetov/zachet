@@ -179,8 +179,8 @@ header .container{
     gap: 30px;
 }
 .section-tarifs__card{
-    max-height: 350px;
-    max-width: 320px;
+    max-height: 450px;
+    max-width: 350px;
     padding-left: 30px;
     margin-right: auto;
     border-radius: 10px;
@@ -210,7 +210,7 @@ header .container{
 }
 .section-tarifs__speed-name h5{
     padding-top: 17px;
-    font-size: 12px;
+    font-size: 22px;
     font-weight: 500;
 }
 .section-tarifs__speed-value h3{
@@ -229,7 +229,7 @@ header .container{
 .section-tarifs__title h5{
     /* padding-top: 57px; */
     padding-right: 122px;
-    font-size: 12px;
+    
     font-weight: 500;
 }
 .about-card__button{
@@ -307,6 +307,11 @@ header .container{
     padding-top: 20px;
 }
 .max-size{
-    width: 1200px;
+    width: 1330px;
     height: 1000px;
+
+}
+.flex_center{
+    flex-direction: column;
+    align-items: center;
 }

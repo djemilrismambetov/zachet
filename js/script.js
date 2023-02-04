@@ -4,11 +4,11 @@ const PromotionImage = document.querySelector('.section-promotion__image')
 //     window.location.href = '../html';
 // };
 const TransferToTariffs = document.querySelector('.add_more')
-PromotionImage.addEventListener("click", function() {
-    PromotionImage.style.width = "200px";
-    PromotionImage.style.height = "200px";
-  });
-
+const PromoteFlex = document.querySelector('section-promotion')
+PromotionImage.onclick = function() {
+    PromotionImage.classList.toggle("max-size")
+    PromoteFlex.classList.add("flex_center")
+}
 TransferToTariffs.onclick = function(){
     window.location.href = "../html/tarrifs.html"
 }
