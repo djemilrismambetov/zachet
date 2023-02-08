@@ -8,5 +8,5 @@ const TransferToTariffs = document.querySelector('.add_more')
 const PromoteFlex = document.querySelector('section-promotion')
 
 TransferToTariffs.onclick = function(){
-    window.location.href = "../html/tarrifs.html"
+    window.location.href = "html/tarrifs.html"
 }
