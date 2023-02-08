@@ -75,11 +75,10 @@ header .container{
 .nav__button button:hover{
     width: 220px;
     height: 70px;
-    font-size:20px;
+    font-size:155%;
     text-transform: capitalize;
     transition-duration: 0.8s;
-    
-
+    text-decoration: solid 2px whitesmoke;
 }
 .section-about{
     
@@ -257,7 +256,7 @@ header .container{
     padding: 0px 20px 20px 20px;
     margin-top: 15px;
     margin-left: 0px;
-   
+    transition-duration: 0.6s;
     border-radius: 4px;
     border: none;
     color: #FFFFFF;
@@ -266,6 +265,7 @@ header .container{
     max-width: 150px;
 }
 .about-card__button button:hover{
+    transition-duration: 0.6s;
     text-decoration: underline 2px white;
     transform: scale(1.11);
 }
@@ -341,7 +341,7 @@ footer{
 }
 .footer-blocks__item-text{
     opacity: 0.7;
-    
+    transition-duration: 0.6s;
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 400;
@@ -350,7 +350,7 @@ footer{
     font-family: 'Baskervville', sans-serif;
 }
 .footer-blocks__item-text:hover{
-    transition-duration: 0.4s;
+    transition-duration: 0.6s;
     opacity: 1;
     /* color: */
     transform: scale(1.19); /* ???*/
@@ -385,7 +385,9 @@ footer{
 .footer-blocks__item-text img{
     padding-right: 20px;
 }
-
+.footer-blocks__item-three img{
+    padding-left: 10px;
+}
 .footer-br{
     max-width: 1366px;
     opacity: 0.2;
