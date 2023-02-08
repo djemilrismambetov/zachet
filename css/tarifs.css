@@ -1,0 +1,20 @@
+body{
+    
+}
+.section-tariffs{
+    display: flex;
+    
+    gap: 5px;
+}
+h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.luxe{
+    background-image: url(../assets/img/depositphotos_9938782-stock-illustration-rich-business-man-with-money.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-position-x: 200px;
+    background-position-y: 190px;
+}   

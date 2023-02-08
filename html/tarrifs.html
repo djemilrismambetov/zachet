@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тарифы | K-Telecom ваш интернет-провайдер</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>K-Telecom ваш интернет-провайдер</title>
+    <link rel="shortcut icon" href="../assets/img/icons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tarifs.css">
 </head>
 <body>
     <header>
@@ -57,41 +61,169 @@
         </div>
     </header>
     <main>
-        <body style="background-color: white;">
-            <div class="container">
-              <h1>Our Tariffs</h1>
-              <div class="tariff-card">
-                <img src="tariff1.jpg" alt="Tariff 1">
-                <h2>Tariff 1</h2>
-                <p class="price">899 ₽</p>
-                <p>Some description for tariff 1</p>
-              </div>
-              <div class="tariff-card">
-                <img src="tariff2.jpg" alt="Tariff 2">
-                <h2>Tariff 2</h2>
-                <p class="price">999 ₽</p>
-                <p>Some description for tariff 2</p>
-              </div>
-              <div class="tariff-card">
-                <img src="tariff3.jpg" alt="Tariff 3">
-                <h2>Tariff 3</h2>
-                <p class="price">1099 ₽</p>
-                <p>Some description for tariff 3</p>
-              </div>
-              <div class="tariff-card">
-                <img src="tariff4.jpg" alt="Tariff 4">
-                <h2>Tariff 4</h2>
-                <p class="price">1999 ₽</p>
-                <p>Some description for tariff 4</p>
-              </div>
-              <h2>Customize your tariff</h2>
-              <input type="range" min="899" max="1999" value="899" class="slider" id="tariffRange">
-              <p>Current tariff price: <span id="tariffPrice">899</span> ₽</p>
-            </div>
+      <div class="container">
+        <h2>Наши тарифы</h2>
+        <div class="section-tariffs">
+              <div class="section-tarifs__card green standard">
+                            <div class="section-tarifs__name">
+                                <h4>Стандарт</h4>
+                            </div>
+                            <div class="section-tarifs__speed-name section-tarifs__title">
+                                <h5>Скорость интернета</h5>
+                            </div>
+                            <div class="section-tarifs__speed-value">
+                                <h3 class="red">100 <span class="speed-value">мбит/с</span></h3>
+                            </div>
+                            <div class="section-tarifs__TV-name section-tarifs__title">
+                                <h5>Количество ТВ-каналов</h5>
+                            </div>
+                            <div class="section-tarifs__TV-value">
+                                <h3 class="red">50 <span class="speed-value">шт</span></h3>
+                            </div>
+                            <div class="section-tarifs__price-name section-tarifs__title">
+                                <h5>Цена</h5>
+                            </div>
+                            <div class="section-tarifs__price-value">
+                                <h3 class="red">899 <span class="speed-value">рублей в месяц</span></h3>
+                            </div>
+                            <div class="about-card__button">
+                                <button class="button">Подключить</button>
+                            </div>
+                        </div>
+                        <div class="section-tarifs__card white-blue standard_plus">
+                            <div class="section-tarifs__name">
+                                <h4>Стандарт+</h4>
+                            </div>
+                            <div class="section-tarifs__speed-name section-tarifs__title">
+                                <h5>Скорость интернета</h5>
+                            </div>
+                            <div class="section-tarifs__speed-value">
+                                <h3 class="red">200 <span class="speed-value">мбит/с</span></h3>
+                            </div>
+                            <div class="section-tarifs__TV-name section-tarifs__title">
+                                <h5>Количество ТВ-каналов</h5>
+                            </div>
+                            <div class="section-tarifs__TV-value">
+                                <h3 class="red">120 <span class="speed-value">шт</span></h3>
+                            </div>
+                            <div class="section-tarifs__price-name section-tarifs__title">
+                                <h5>Цена</h5>
+                            </div>
+                            <div class="section-tarifs__price-value">
+                                <h3 class="red">999 <span class="speed-value">рублей в месяц</span></h3>
+                            </div>
+                            <div class="about-card__button">
+                                <button class="button">Подключить</button>
+                            </div>
+                        </div>
+                        <div class="section-tarifs__card blue ultra">
+                            <div class="section-tarifs__name">
+                                <h4>Ультра</h4>
+                            </div>
+                            <div class="section-tarifs__speed-name section-tarifs__title">
+                                <h5>Скорость интернета</h5>
+                            </div>
+                            <div class="section-tarifs__speed-value">
+                                <h3 class="red">500 <span class="speed-value">мбит/с</span></h3>
+                            </div>
+                            <div class="section-tarifs__TV-name section-tarifs__title">
+                                <h5>Количество ТВ-каналов</h5>
+                            </div>
+                            <div class="section-tarifs__TV-value">
+                                <h3 class="red">120+ <span class="speed-value">шт</span></h3>
+                            </div>
+                            <div class="section-tarifs__price-name section-tarifs__title">
+                                <h5>Цена</h5>
+                            </div>
+                            <div class="section-tarifs__price-value">
+                                <h3 class="red">1099 <span class="speed-value">рублей в месяц</span></h3>
+                            </div>
+                            <div class="about-card__button">
+                                <button class="button">Подключить</button>
+                            </div>
+                            
+                        </div>
+                        <div class="section-tarifs__card yellow luxe">
+                          <div class="section-tarifs__name">
+                            <h4>Люкс</h4>
+                        </div>
+                        <div class="section-tarifs__speed-name section-tarifs__title">
+                            <h5>Скорость интернета</h5>
+                        </div>
+                        <div class="section-tarifs__speed-value">
+                            <h3 class="red">Безлимит <span class="speed-value"></span></h3>
+                        </div>
+                        <div class="section-tarifs__TV-name section-tarifs__title">
+                            <h5>Количество ТВ-каналов</h5>
+                        </div>
+                        <div class="section-tarifs__TV-value">
+                            <h3 class="red">120+ <span class="speed-value">шт</span></h3>
+                        </div>
+                        <div class="section-tarifs__price-name section-tarifs__title">
+                            <h5>Цена</h5>
+                        </div>
+                        <div class="section-tarifs__price-value">
+                            <h3 class="red">1999 <span class="speed-value">рублей в месяц</span></h3>
+                        </div>
+                        <div class="about-card__button">
+                            <button class="button">Подключить</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="tarifs-customization">
+                      <h2>Настрой свой будущий тариф</h2>
+                        <input type="range" min="899" max="1999" value="899" class="slider" id="tariffRange">
+                        <p>Текущая цена на тариф: <span id="tariffPrice">899</span> ₽</p>
+                    </div>
+          </div>
+         
+      </div>
     </main>
     <footer>
-
-    </footer>
+      <div class="container">
+          <div class="footer-blocks">
+              <div class="footer-blocks__item footer-about">
+                  <ul>
+                      <li><a href="" class="footer-blocks__item-title">Информация</a></li>
+                      <div class="footer-blocks__item-text">
+                          <li class="footer-blocks__item-link"><a href="" class="footer-blocks__item-text">Условия использования</a></li>
+                          <li class="footer-blocks__item-link"><a href="" class="footer-blocks__item-text">Политика безопасности</a></li>
+                          <li class="footer-blocks__item-link"><a href="" class="footer-blocks__item-text">Онлайн оплата</a></li>
+                          <li class="footer-blocks__item-link"><a href="" class="footer-blocks__item-text">О нас</a></li>
+                      </div>
+                  </ul>
+              </div>
+              <div class="footer-blocks__item footer-contacts">
+                  <ul>
+                      <li><a href="" class="footer-blocks__item-title">Контакты</a></li>
+                      <div class="footer-blocks__item-text">
+                          <li class="footer-blocks__item-link"><a href="" class="footer-blocks__item-text"><img src="../assets/img/icons/Call.png" alt="call logo"> + 7 999 123 45 67</a></li>
+                          <li class="footer-blocks__item-link"><a href="" class="footer-blocks__item-text"><img src="../assets/img/icons/mail.png" alt="mail logo"> mymail@gmail.org</a></li>
+                          <li class="footer-blocks__item-link"><a href="" class="footer-blocks__item-text"><img src="../assets/img/icons/Location.png" alt="location logo"> Праздничный переулок 7</a></li>
+                      </div>
+                  </ul>
+              </div>
+              <div class="footer-blocks__item footer-contacts">
+                  <ul>
+                      <li><a href="" class="footer-blocks__item-title">Мы в социальных сетях</a></li>
+                      <div class="footer-blocks__item-text">
+                          <a href=""><img src="../assets/img/icons/telegram.png" alt="telegram logo" class="size-up"></a>
+                          <a href=""><img src="../assets/img/icons/facebook.png" alt="facebook logo" class="size-up"></a>
+                          <a href=""><img src="../assets/img/icons/twitter.png" alt="twitter logo" class="size-up"></a>
+                          <a href=""><img src="../assets/img/icons/instagram.png" alt="instagram logo" class="size-up"></a>
+                      </div>  
+                  </ul>
+              </div>
+          </div>
+          
+          <div class="footer-br">
+              <br>
+          </div>
+          <div class="footer-copyright__text">
+              © All rights reserved 2023
+          </div>
+      </div>
+  </footer>
     <script src="../js/slider.js"></script>
     <script src="../js/script.js"></script>
 </body>
