@@ -156,13 +156,7 @@ header .container{
 .about-card__arrow{
    cursor: pointer;
 }
-.about-card__icon{
-    /* display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    margin-top: -15px;
-    padding-left: 20px; */
-}
+
 .about-card__title{
     padding-left: 20px;
     padding-top: 17px;
