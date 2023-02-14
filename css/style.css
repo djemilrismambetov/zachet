@@ -21,7 +21,7 @@ html{
     align-content: center;
 }
 .supheader .container p{
-    margin:0;
+    margin: 0;
 }
 .city_name{
     padding-left: 1px;
@@ -94,11 +94,8 @@ header .container{
     align-items: center;
 }
 @media screen and (max-width:768px){
-    header .container{
-        /* flex-direction: row; */
-       
-        /* Как сделать так, чтобы на планшете навигационная панель(navbar, который сделал при помощи Bootstrap) никуда не уходила на моём сайте? */
-    }
+    /* header .container{
+      */
 
     .nav__button button{
         width: 25px;
