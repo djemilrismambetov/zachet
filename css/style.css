@@ -61,6 +61,15 @@ html{
     gap: 5px;
     color: #000000;
 }
+.supheader-right__flex{
+    transition-duration: 2s;
+}
+.supheader-right__flex:hover{
+    text-decoration: underline black 1px;
+    cursor: cell;
+    transition-duration: 2s;
+    transform: scale(1.2);
+}
 .supheader-border{
     padding-top: 1px;
     opacity: 0.2;
