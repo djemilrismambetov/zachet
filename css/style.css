@@ -10,11 +10,89 @@ html{
     transform: scale(1.5);
     transition-duration: 0.4s;
 }
-header .container{
+.supheader .container{
+
+    max-height: 18px;
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    align-content: center;
+}
+.supheader .container p{
+    margin:0;
+}
+.city_name{
+    padding-left: 1px;
+}
+.supheader-left__flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    max-height: 18px;
+    align-items: center;
+    color: #000000;
+    align-content: center;
+    opacity: 0.4;
+    gap: 5px;
+}
+.supheader-right__flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 18px;
+    align-items: center;
+    align-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: right;
+    gap: 5px;
+    color: #000000;
+}
+.supheader-border{
+    padding-top: 1px;
+    opacity: 0.2;
+    border-bottom: 1px solid #000000;
+}
+#clock {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+header .container{
+    /* padding-top: 10px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+header .container{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:768px){
+    header .container{
+        /* flex-direction: row; */
+       
+        /* Как сделать так, чтобы на планшете навигационная панель(navbar, который сделал при помощи Bootstrap) никуда не уходила на моём сайте? */
+    }
+
+    .nav__button button{
+        width: 25px;
+        height: 20px;
+    }
 }
 .header-logo{
     padding-top: 17px;
@@ -31,6 +109,7 @@ header .container{
     justify-content: space-between;
     gap: 30px;
 }
+
 .navbar li{
     list-style-type: none;
 }
@@ -79,6 +158,26 @@ header .container{
     text-transform: capitalize;
     transition-duration: 0.8s;
     text-decoration: solid 2px whitesmoke;
+}
+@media screen and (max-width:768px){
+    .navbar{
+        /* flex-direction: ; */
+        gap: 2px;
+        justify-content: center;
+        /* max-width: 550px; */
+        flex-wrap: nowrap;
+    }
+    .navbar-nav{
+        flex-direction: row;
+        gap: 5px;
+    }
+    .header-logo{
+        transform: scale(0.80);
+    }
+    .nav__button{
+        padding: 0;
+        transform: scale(0.77);
+    }
 }
 .section-about{
     
@@ -165,6 +264,27 @@ header .container{
 .about-card__text{
     padding-left: 20px;
 }
+@media screen and (max-width:768px){
+ .img-avatar{
+    transform: scale(0.87);
+    /* padding-left: 125px; */
+ }
+ .section-about__info{
+    max-width: 400px;
+    justify-content:flex-end;
+ }
+ .section-about__cards{
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .about-card__wrap{
+    /* text-align: jus; */
+    width:150px;
+ }
+ .about-card__text{
+    font-size: 15px;
+ }
+}
 .section-tarifs{
     padding-top: 80px;
 }
@@ -226,6 +346,10 @@ header .container{
 }
 .red{
     color: #FF4D4D;
+}
+.red_router{
+    color: #FF4D4D;
+    text-decoration: underline;
 }
 .section-tarifs__title h5{
     /* padding-top: 57px; */

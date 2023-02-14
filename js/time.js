@@ -1,26 +1,17 @@
-
-function clock() {
-var d = new Date();
-var month_num = d.getMonth()
-var day = d.getDate();
-var hours = d.getHours();
-var minutes = d.getMinutes();
-var seconds = d.getSeconds();
-
-month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
-"июля", "августа", "сентября", "октября", "ноября", "декабря");
-
-if (day <= 9) day = "0" + day;
-if (hours <= 9) hours = "0" + hours;
-if (minutes <= 9) minutes = "0" + minutes;
-if (seconds <= 9) seconds = "0" + seconds;
-
-date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
-" г.&nbsp;&nbsp;&nbsp;Текущее время - "+ hours + ":" + minutes + ":" + seconds;
-if (document.layers) {
- document.layers.doc_time.document.write(date_time);
- document.layers.doc_time.document.close();
+function getTime() {
+    // Make a GET request to an NTP server
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://pool.ntp.org", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+            // Extract the current time from the response
+            var time = xhr.responseText;
+            // Update the clock element with the time
+            document.getElementById("clock").innerHTML = time;
+        }
+    };
+    xhr.send();
 }
-else document.getElementById("doc_time").innerHTML = date_time;
- setTimeout("clock()", 1000);
-}
+
+// Call the getTime function every second to update the clock
+setInterval(getTime, 1000);

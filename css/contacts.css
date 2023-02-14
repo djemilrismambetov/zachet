@@ -1,0 +1,49 @@
+.section-about__info-address a{
+    color: black;
+    text-decoration: none;
+    transition-duration: 2s;
+
+}
+.section-about__info-address{
+    transition-duration: 2s;
+    animation-duration: 2s;
+}
+.section-about__info-address:hover{
+    transform: scale(1.0);
+    transition-duration: 2s;
+    /* color: gray; */
+    animation-duration: 2s;
+    text-decoration: underline  2px;
+}
+.section-about{
+    max-height: 600px;
+}
+p{
+    text-indent: 20px;
+}
+h5{
+    text-indent: 5px;
+}
+.section-about__info-telephones a{
+    text-decoration: none;
+    color: black
+}
+.section-about__info-telephones a:hover{
+    transform: scale(1.0);
+    /* color: gray; */
+    transition-duration: 2s;
+    animation-duration: 2s;
+    text-decoration: underline  2px;
+}
+.display-flex__column{
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+}
+.img-avatar{
+    max-width: 428px;
+    max-height: 465px;
+    margin-top: 89px;
+    cursor: pointer;
+}
