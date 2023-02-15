@@ -12,9 +12,10 @@ h2{
     padding-bottom: 20px;
 }
 .luxe{
-    background-image: url(../assets/img/depositphotos_9938782-stock-illustration-rich-business-man-with-money.jpg);
+    background-image: url(../assets/img/rich-man-transformed.png);
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-position-x: 200px;
-    background-position-y: 190px;
+    background-position-x: 170px;
+    /* background-position-y: 20px; */
+    background-size: 250px 350px;
 }   

@@ -279,18 +279,44 @@ header .container{
  }
  .section-about__info{
     max-width: 400px;
-    justify-content:flex-end;
+    /* justify-content:flex-end;
+    align-items: flex-start;
+    align-content: flex-start; */
+    /* display: block; */
+ }
+ /* .section-about__info *{
+    padding-top:20px
+ } */
+ .section-about__info h2{
+    margin-left: -20px;
+ }
+ .section-about__info h5{
+    margin-left:-20px;
  }
  .section-about__cards{
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    margin-left:-20px;
+    padding-top:0px;
+    flex-direction: row;
+    justify-content: space-between;
  }
+ /* .section-about__cards *{
+    padding-top: 0px;
+ } */
  .about-card__wrap{
     /* text-align: jus; */
     width:150px;
+    height: 250px;
  }
  .about-card__text{
     font-size: 15px;
+    padding-left: 0px;
+    margin: 0 10px;
+ }
+ .about-card__title{
+    padding-left: 0px;
+    margin: 0 10px;
  }
 }
 .section-tarifs{
@@ -330,6 +356,7 @@ header .container{
 }
 .white-blue{
     background-color:#C2FFF8;
+    border-radius: 10px;
 }
 .blue{
     background-color: #C2E2FF;
@@ -421,29 +448,54 @@ header .container{
     align-items: center;
     max-width: 350px;
 }
+@media screen and (max-width: 768px){
+    .section-tarifs__cards-wrap{
+        flex-wrap: wrap;
+    }
+}
 .section-promotion{
-    padding-top: 70px;
+    padding: 40px 10px;
+    margin-top: 30px;
     max-height: 525px;
     display: flex;
     flex-direction: row;
     gap: 55px;
+    justify-content: center;
 }
 .section-promotion img{
     cursor: zoom-in;
+    border-radius: 40px;
+    max-width: 500px;
+
+}
+.section-promotion__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
 }
 .section-promotion__info h2{
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 33px;
     max-width: 453px;
 }
 .section-promotion__info p{
-    padding-top: 20px;
+    padding-top: 25px;
 }
 .max-size{
     width: 1330px;
     height: 1000px;
 
+}
+@media screen and (max-width: 768px){
+   .max-size{
+    transform: scale(0.89);
+   }
+   .section-promotion img{
+    max-width: 300px;
+    max-height: 250px;
+   }
 }
 .flex_center{
     flex-direction: column;
