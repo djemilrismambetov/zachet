@@ -2,7 +2,8 @@ $(document).ready(function(){
     $("#jquery_jplayer_1").jPlayer({
         ready: function () {
             $(this).jPlayer("setMedia", {
-                mp3: "http://23.111.104.132:9010/chil_320"
+                mp3: "https://radiorecord.hostingradio.ru/rr_main96.aacp"
+                // aac: "https://radiorecord.hostingradio.ru/rr_main96.aac"
             });
         },
         play: function() { // Тут можно добавить дополнительный код, который выполняется при начале проигрывания
@@ -13,4 +14,4 @@ $(document).ready(function(){
         wmode: "window",
         useStateClassSkin: true
     })
-});
+})
