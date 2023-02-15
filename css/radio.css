@@ -46,3 +46,7 @@
     width: 0px;
     padding-left: 150px;
 }
+.jp-play{
+    background-image: url(../assets/img/icons/1486348532-music-play-pause-control-go-arrow_80458.png);
+    filter: invert(100%);
+}   
