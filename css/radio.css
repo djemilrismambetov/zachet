@@ -4,49 +4,36 @@
     max-width: 450px;
 
 }
-.jp-audio, #jp_container_1 *{
-    background-color: transparent;
-    border: none;
-}
-.jp-audio .jp-controls {
-    max-width: 450px;
-}
-.jp-audio .jp-type-single .jp-progress{
-    overflow: hidden;
+    .jp-progress-container, .jp-seek-bar {
+    overflow: hidden !important;
+  }
+    .jp-current-time, .jp-duration {
+    display: none !important;
+  }
+    .jp-video, .jp-type-playlist, .jp-jplayer {
+    background: transparent !important;
+  }
+    .jp-volume-bar{
+    margin:0px 10px;
+    transform: scale(1.8);
+    background-color: gray;
+    background-image: none;
+  }
+  .jp-progress{
     display: none;
-}
-.jp-audio .jp-interface{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-width: 200px;
-}
-/* .jp-audio * , .jp-audio .jp-time-holder{
-    position: inherit;
-} */
-.jp-controls button.jp-stop{
-    display: none;
-}
-.jp-volume-bar {
-    position: relative;
-    overflow: hidden;
-    background: url(../image/jplayer.blue.monday.jpg) 0 -250px repeat-x;
-    /* top: 5px;
-    left: 200px; */
-    width: 46px;
-    height: 5px;
-    cursor: pointer;
-}
-.jp-time-holder{
-    display: none;
-}
-.jp-volume-controls{
-    left: 0;
-    width: 0px;
-    padding-left: 150px;
-}
-.jp-play{
-    background-image: url(../assets/img/icons/1486348532-music-play-pause-control-go-arrow_80458.png);
-    filter: invert(100%);
-}   
+  }
+  .jp-audio , .jp-controls{
+    width:200px;
+  }
+  .jp-volume-controls{
+    left:100px;
+    top: 20px;
+  }
+  .jp-audio .jp-controls{
+    padding: 10px 0px;
+    /* margin-top: 50px; */
+  }
+  .jp-audio .jp-interface{
+    height: 60px;
+    width: 220px;
+  }
