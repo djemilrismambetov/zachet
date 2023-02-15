@@ -587,3 +587,7 @@ footer{
    
 }
 
+#jp_container_1{
+    max-width:1330px;
+    margin: 0 auto;
+}
