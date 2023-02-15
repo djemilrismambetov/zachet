@@ -19,7 +19,7 @@ h2{
     /* background-position-y: 20px; */
     background-size: 250px 350px;
 }
-@media screen and (media-screen: 768px){
+@media screen and (max-width: 768px){
     .section-tariffs{
         display: flex;
         flex-wrap: wrap;
